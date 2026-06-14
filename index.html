@@ -1597,7 +1597,7 @@
             }
         }
 
-        // --- DEEPSEEK AI FACT CHECKER (DANGER ZONE: HARDCODED KEY) ---
+       // --- DEEPSEEK AI FACT CHECKER (SECURE CLOUDFLARE PROXY) ---
         async function generateRealityWithAI() {
             const claimBox = document.getElementById('new-claim');
             const realityBox = document.getElementById('new-reality');
@@ -1607,25 +1607,25 @@
                 return;
             }
 
-            // 🚨 YOUR HARDCODED API KEY GOES HERE 🚨
-            const DEEPSEEK_API_KEY = "sk-49abb474c3ba49d9b93450d942f01d66";
-
             // Visual feedback
             realityBox.value = "🤖 DeepSeek is analyzing the delusion...";
             
             try {
-                const response = await fetch('https://api.deepseek.com/chat/completions', {
+                // Point this to your Cloudflare Worker URL instead of DeepSeek directly!
+                const WORKER_URL = 'aya-debunker.amirulfahmy02.workers.dev'; 
+                
+                const response = await fetch(WORKER_URL, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${DEEPSEEK_API_KEY}`
+                        'Content-Type': 'application/json'
+                        // Look, ma! No API key here!
                     },
                     body: JSON.stringify({
                         model: "deepseek-chat",
                         messages: [
                             { 
                                 role: "system", 
-                                content: "You are a savage, cynical Malaysian Gen Z friend. Your job is to debunk absolute lies and delusions made by a girl named Aya. Read the claim, and write a 1-to-2 sentence reality check exposing her. Use Malaysian slang like 'kantoi', 'weh', 'dih', 'fr', and 'cap'. Be ruthless but funny." 
+                                content: "You are a savage, cynical Malaysian Gen Z friend. Your job is to debunk absolute lies and delusions made by a girl named Aya. Read the claim, and write a 1-to-2 sentence reality check exposing her. Use Malaysian slang like 'kantoi', 'weh', 'fr', and 'cap'. Be ruthless but funny." 
                             },
                             { 
                                 role: "user", 
@@ -1638,17 +1638,16 @@
                 const data = await response.json();
                 
                 if (data.choices && data.choices.length > 0) {
-                    // Type out the AI's response into the textarea
                     realityBox.value = data.choices[0].message.content;
                     showToast("✨ AI successfully destroyed her ego.");
                 } else {
-                    throw new Error("Invalid response from DeepSeek");
+                    throw new Error("Invalid response from AI");
                 }
                 
             } catch (error) {
                 console.error("AI Error:", error);
                 realityBox.value = "";
-                showToast("❌ DeepSeek failed. Her delusion is too strong.");
+                showToast("❌ AI Server failed. Her delusion is too strong.");
             }
         }
 
