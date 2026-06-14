@@ -300,6 +300,70 @@
         </div>
     </section>
 
+    <!-- THE NEW HOAX SUBMISSION FORM -->
+    <section id="report-zone" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
+        <div class="bg-[#11111b] border-4 border-black neo-border-green p-6 md:p-8 relative overflow-hidden">
+            <!-- Decorative background elements -->
+            <div class="absolute top-[-20px] right-[-20px] text-8xl opacity-10 rotate-12 pointer-events-none">📝</div>
+            
+            <div class="mb-8 relative z-10">
+                <span class="bg-[#adff2f] text-black text-xs font-black uppercase px-3 py-1 code-font rounded tracking-wider animate-pulse">
+                    ⚠️ LIVE DATABASE UPDATE
+                </span>
+                <h2 class="heading-font text-3xl md:text-5xl font-extrabold uppercase mt-3 text-white leading-none">
+                    LOG A NEW DELUSION
+                </h2>
+                <p class="text-gray-400 mt-2 text-sm max-w-lg">
+                    Did Aleeya strike again? Submit her latest overclaim below to permanently log it into the official Selangor archives.
+                </p>
+            </div>
+            
+            <form id="new-hoax-form" class="grid grid-cols-1 md:grid-cols-2 gap-5 code-font relative z-10">
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Hoax Title</label>
+                    <input type="text" id="new-title" required placeholder="e.g. The Fake Rolex Incident" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
+                </div>
+                
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Category</label>
+                    <input type="text" id="new-category" required placeholder="e.g. Fake Rich, Academic Lying" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
+                </div>
+
+                <div class="flex flex-col gap-2 md:col-span-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">The Claim (What she said)</label>
+                    <textarea id="new-claim" required rows="2" placeholder="Describe the absolute nonsense she tried to pass off as fact..." class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors"></textarea>
+                </div>
+
+                <div class="flex flex-col gap-2 md:col-span-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">The Reality (Kantoi Fact)</label>
+                    <textarea id="new-reality" required rows="2" placeholder="How did she get exposed? What actually happened..." class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors"></textarea>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Tier Ranking</label>
+                    <select id="new-tier" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white transition-colors cursor-pointer appearance-none">
+                        <option value="S">🔥 S-TIER: GOD-LEVEL DELUSION</option>
+                        <option value="A">🤥 A-TIER: ALMOST BELIEVED IT</option>
+                        <option value="B">🤦‍♂️ B-TIER: BRO WHO LET HER TALK</option>
+                        <option value="C">🤡 C-TIER: CRINGE INTENSIFIES</option>
+                        <option value="D" selected>🗑️ D-TIER: LOW EFFORT LIES</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Delusion Scale (1-100%)</label>
+                    <input type="number" id="new-scale" required min="1" max="100" value="50" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
+                </div>
+
+                <div class="md:col-span-2 mt-2">
+                    <button type="submit" class="w-full bg-[#ff007f] text-white hover:bg-pink-600 font-bold py-4 text-lg uppercase tracking-wider neo-border transition-transform">
+                        🚨 PUBLISH LIE TO DATABASE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
      <!-- THE HOAX TRACKER INTERACTIVE FILTER & LIST -->
     <section id="hoax-tracker" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
@@ -490,69 +554,7 @@
         </div>
     </section>
 
-    <!-- THE NEW HOAX SUBMISSION FORM -->
-    <section id="report-zone" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
-        <div class="bg-[#11111b] border-4 border-black neo-border-green p-6 md:p-8 relative overflow-hidden">
-            <!-- Decorative background elements -->
-            <div class="absolute top-[-20px] right-[-20px] text-8xl opacity-10 rotate-12 pointer-events-none">📝</div>
-            
-            <div class="mb-8 relative z-10">
-                <span class="bg-[#adff2f] text-black text-xs font-black uppercase px-3 py-1 code-font rounded tracking-wider animate-pulse">
-                    ⚠️ LIVE DATABASE UPDATE
-                </span>
-                <h2 class="heading-font text-3xl md:text-5xl font-extrabold uppercase mt-3 text-white leading-none">
-                    LOG A NEW DELUSION
-                </h2>
-                <p class="text-gray-400 mt-2 text-sm max-w-lg">
-                    Did Aleeya strike again? Submit her latest overclaim below to permanently log it into the official Selangor archives.
-                </p>
-            </div>
-            
-            <form id="new-hoax-form" class="grid grid-cols-1 md:grid-cols-2 gap-5 code-font relative z-10">
-                <div class="flex flex-col gap-2">
-                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Hoax Title</label>
-                    <input type="text" id="new-title" required placeholder="e.g. The Fake Rolex Incident" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
-                </div>
-                
-                <div class="flex flex-col gap-2">
-                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Category</label>
-                    <input type="text" id="new-category" required placeholder="e.g. Fake Rich, Academic Lying" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
-                </div>
-
-                <div class="flex flex-col gap-2 md:col-span-2">
-                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">The Claim (What she said)</label>
-                    <textarea id="new-claim" required rows="2" placeholder="Describe the absolute nonsense she tried to pass off as fact..." class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors"></textarea>
-                </div>
-
-                <div class="flex flex-col gap-2 md:col-span-2">
-                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">The Reality (Kantoi Fact)</label>
-                    <textarea id="new-reality" required rows="2" placeholder="How did she get exposed? What actually happened..." class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors"></textarea>
-                </div>
-
-                <div class="flex flex-col gap-2">
-                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Tier Ranking</label>
-                    <select id="new-tier" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white transition-colors cursor-pointer appearance-none">
-                        <option value="S">🔥 S-TIER: GOD-LEVEL DELUSION</option>
-                        <option value="A">🤥 A-TIER: ALMOST BELIEVED IT</option>
-                        <option value="B">🤦‍♂️ B-TIER: BRO WHO LET HER TALK</option>
-                        <option value="C">🤡 C-TIER: CRINGE INTENSIFIES</option>
-                        <option value="D" selected>🗑️ D-TIER: LOW EFFORT LIES</option>
-                    </select>
-                </div>
-
-                <div class="flex flex-col gap-2">
-                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Delusion Scale (1-100%)</label>
-                    <input type="number" id="new-scale" required min="1" max="100" value="50" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
-                </div>
-
-                <div class="md:col-span-2 mt-2">
-                    <button type="submit" class="w-full bg-[#ff007f] text-white hover:bg-pink-600 font-bold py-4 text-lg uppercase tracking-wider neo-border transition-transform">
-                        🚨 PUBLISH LIE TO DATABASE
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
+    
 
    
 
