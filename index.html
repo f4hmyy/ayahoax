@@ -300,6 +300,61 @@
         </div>
     </section>
 
+     <!-- THE HOAX TRACKER INTERACTIVE FILTER & LIST -->
+    <section id="hoax-tracker" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+            <div>
+                <h2 class="heading-font text-3xl md:text-6xl font-extrabold uppercase leading-none text-white tracking-tight">
+                    THE HOAX BOARD <span class="text-[#ff007f]">💅</span>
+                </h2>
+                <p class="text-gray-400 mt-2 max-w-lg">
+                    Search her catalog, filter by tier, and click cards to toggle her active delusional index. Use the pink buttons to grab quotes for gossip!
+                </p>
+            </div>
+
+            <!-- Search Bar inside Brutalist Input Wrapper -->
+            <div class="w-full md:w-80">
+                <div class="relative">
+                    <input id="search-hoax" type="text" placeholder="Search a lie... (e.g. Haechan, London)" class="w-full bg-black border-4 border-black focus:border-[#ff007f] outline-none px-4 py-3 font-semibold text-white placeholder-gray-500 neo-border-green transition-all" oninput="filterHoaxes()">
+                    <span class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500"><i class="fa-solid fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Tags -->
+        <div class="flex flex-wrap gap-2 mb-8" id="tier-filters">
+            <button onclick="setFilter('all')" class="filter-btn active-filter bg-[#ff007f] text-white px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                ALL LIES (43)
+            </button>
+            <button onclick="setFilter('S')" class="filter-btn bg-black text-[#ff007f] border border-pink-500 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🔥 S-TIER: GOD-LEVEL DELUSION
+            </button>
+            <button onclick="setFilter('A')" class="filter-btn bg-black text-[#adff2f] border border-lime-500 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🤥 A-TIER: ALMOST BELIEVED IT
+            </button>
+            <button onclick="setFilter('B')" class="filter-btn bg-black text-cyan-400 border border-cyan-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🤦‍♂️ B-TIER: BRO WHO LET HER TALK
+            </button>
+            <button onclick="setFilter('C')" class="filter-btn bg-black text-yellow-400 border border-yellow-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🤡 C-TIER: CRINGE INTENSIFIES
+            </button>
+            <button onclick="setFilter('D')" class="filter-btn bg-black text-purple-400 border border-purple-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🗑️ D-TIER: LOW EFFORT LIES
+            </button>
+        </div>
+
+        <!-- Responsive Grid for cards -->
+        <div id="hoaxes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300">
+            <!-- Dynamic Injection Area -->
+        </div>
+
+        <!-- Empty state fallback -->
+        <div id="empty-state" class="hidden text-center py-16 text-gray-500">
+            <span class="text-6xl">🙈</span>
+            <p class="font-bold uppercase tracking-widest mt-4">Aleeya didn't make up a lie with that keyword yet... Try another one!</p>
+        </div>
+    </section>
+
     <!-- INTERACTIVE GAME ZONE: DELULU RUNNER -->
     <section id="game-zone" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
         <div class="bg-black text-white p-6 md:p-8 border-4 border-black neo-border-pink relative overflow-hidden">
@@ -499,60 +554,7 @@
         </div>
     </section>
 
-    <!-- THE HOAX TRACKER INTERACTIVE FILTER & LIST -->
-    <section id="hoax-tracker" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
-            <div>
-                <h2 class="heading-font text-3xl md:text-6xl font-extrabold uppercase leading-none text-white tracking-tight">
-                    THE HOAX BOARD <span class="text-[#ff007f]">💅</span>
-                </h2>
-                <p class="text-gray-400 mt-2 max-w-lg">
-                    Search her catalog, filter by tier, and click cards to toggle her active delusional index. Use the pink buttons to grab quotes for gossip!
-                </p>
-            </div>
-
-            <!-- Search Bar inside Brutalist Input Wrapper -->
-            <div class="w-full md:w-80">
-                <div class="relative">
-                    <input id="search-hoax" type="text" placeholder="Search a lie... (e.g. Haechan, London)" class="w-full bg-black border-4 border-black focus:border-[#ff007f] outline-none px-4 py-3 font-semibold text-white placeholder-gray-500 neo-border-green transition-all" oninput="filterHoaxes()">
-                    <span class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500"><i class="fa-solid fa-search"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Filter Tags -->
-        <div class="flex flex-wrap gap-2 mb-8" id="tier-filters">
-            <button onclick="setFilter('all')" class="filter-btn active-filter bg-[#ff007f] text-white px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
-                ALL LIES (43)
-            </button>
-            <button onclick="setFilter('S')" class="filter-btn bg-black text-[#ff007f] border border-pink-500 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
-                🔥 S-TIER: GOD-LEVEL DELUSION
-            </button>
-            <button onclick="setFilter('A')" class="filter-btn bg-black text-[#adff2f] border border-lime-500 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
-                🤥 A-TIER: ALMOST BELIEVED IT
-            </button>
-            <button onclick="setFilter('B')" class="filter-btn bg-black text-cyan-400 border border-cyan-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
-                🤦‍♂️ B-TIER: BRO WHO LET HER TALK
-            </button>
-            <button onclick="setFilter('C')" class="filter-btn bg-black text-yellow-400 border border-yellow-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
-                🤡 C-TIER: CRINGE INTENSIFIES
-            </button>
-            <button onclick="setFilter('D')" class="filter-btn bg-black text-purple-400 border border-purple-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
-                🗑️ D-TIER: LOW EFFORT LIES
-            </button>
-        </div>
-
-        <!-- Responsive Grid for cards -->
-        <div id="hoaxes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300">
-            <!-- Dynamic Injection Area -->
-        </div>
-
-        <!-- Empty state fallback -->
-        <div id="empty-state" class="hidden text-center py-16 text-gray-500">
-            <span class="text-6xl">🙈</span>
-            <p class="font-bold uppercase tracking-widest mt-4">Aleeya didn't make up a lie with that keyword yet... Try another one!</p>
-        </div>
-    </section>
+   
 
     <!-- TRIVIA CHALLENGE / GASLIGHT TRIVIA -->
     <section id="quiz-zone" class="bg-[#11111b] border-t-4 border-black py-16 relative z-20">
@@ -683,9 +685,8 @@
     </footer>
 
     <script>
-  
-        
-
+        // Start with a completely empty slate. The cloud will provide.
+        let hoaxes = []; 
         let activeFilter = 'all';
         let selectedLies = new Set();
         let currentQuizIndex = 0;
@@ -1556,25 +1557,36 @@
                 const response = await fetch(SHEETDB_URL);
                 const data = await response.json();
                 
-                // If there are new lies in the sheet, format them and add to the top of our list
                 if (data && data.length > 0) {
+                    // Map the entire Google Sheet into our app's format
                     const liveEntries = data.map(item => ({
-                        id: parseInt(item.id),
-                        title: item.title,
-                        tier: item.tier,
-                        claim: item.claim,
-                        reality: item.reality,
-                        scale: parseInt(item.scale),
-                        category: item.category
+                        id: parseInt(item.id) || 0,
+                        title: item.title || "Unknown Lie",
+                        tier: item.tier || "D",
+                        claim: item.claim || "No claim recorded.",
+                        reality: item.reality || "Kantoi missing.",
+                        scale: parseInt(item.scale) || 50,
+                        category: item.category || "Uncategorized"
                     }));
                     
-                    // Add to the very beginning of the hoaxes array
-                    hoaxes.unshift(...liveEntries.reverse());
+                    // Replace the empty local array entirely. 
+                    // We use reverse() because Google Sheets adds new entries to the BOTTOM, 
+                    // and we want the newest lies at the TOP of the website.
+                    hoaxes = liveEntries.reverse();
                     
+                    // Update all visual counters on the page
                     updateAllHoaxCounters();
                 }
             } catch (error) {
                 console.error("Failed to sync with the Delusion Matrix:", error);
+                
+                // Fallback state if the database fails to load
+                document.getElementById('hoaxes-grid').innerHTML = `
+                    <div class="col-span-full text-center py-16 text-red-500 font-bold code-font border-4 border-red-500 neo-border bg-black">
+                        <span class="text-6xl mb-4 block">🚨</span>
+                        DATABASE CONNECTION FAILED.<br>ALEEYA MAY HAVE TAKEN DOWN THE MAINFRAME.
+                    </div>
+                `;
             }
         }
 
