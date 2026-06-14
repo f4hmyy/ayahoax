@@ -1084,6 +1084,9 @@
         let currentQuizIndex = 0;
         let quizScore = 0;
 
+        // --- LIVE DATABASE CONNECTION ---
+        const SHEETDB_URL = 'https://sheetdb.io/api/v1/klaxto698r3kz';
+
         // ARCADE MINI-GAME STATE & VARIABLES
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
@@ -1924,8 +1927,6 @@
             }
         });
 
-        // --- LIVE DATABASE CONNECTION ---
-        const SHEETDB_URL = 'https://sheetdb.io/api/v1/klaxto698r3kz'; // <-- PASTE YOUR URL HERE
 
         async function fetchLiveHoaxes() {
             try {
