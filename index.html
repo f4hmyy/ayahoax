@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleeya Natasha's 43 Biggest Hoaxes (2026-2027)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Syne:wght@700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --neon-green: #adff2f;
+            --neon-pink: #ff007f;
+            --neon-blue: #00ffff;
+            --bg-dark: #09090e;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        .heading-font {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+        }
+
+        .code-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Brutalist / Gen Z Aesthetic styles */
+        .neo-border {
+            border: 4px solid #000;
+            box-shadow: 4px 4px 0px #000;
+            transition: all 0.15s ease-in-out;
+        }
+
+        .neo-border:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #000;
+        }
+
+        .neo-border-pink {
+            border: 4px solid #000;
+            box-shadow: 4px 4px 0px var(--neon-pink);
+        }
+
+        .neo-border-green {
+            border: 4px solid #000;
+            box-shadow: 4px 4px 0px var(--neon-green);
+        }
+
+        /* Glitch text animation */
+        .glitch-wrapper {
+            position: relative;
+        }
+
+        .glitch-text::before,
+        .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-dark);
+        }
+
+        .glitch-text::before {
+            left: 2px;
+            text-shadow: -2px 0 var(--neon-pink);
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+
+        .glitch-text::after {
+            left: -2px;
+            text-shadow: -2px 0 var(--neon-green), 0 2px var(--neon-blue);
+            clip: rect(85px, 450px, 140px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim {
+            0% { clip: rect(31px, 9999px, 94px, 0); }
+            10% { clip: rect(112px, 9999px, 76px, 0); }
+            20% { clip: rect(85px, 9999px, 5px, 0); }
+            30% { clip: rect(27px, 9999px, 115px, 0); }
+            40% { clip: rect(73px, 9999px, 29px, 0); }
+            50% { clip: rect(118px, 9999px, 142px, 0); }
+            60% { clip: rect(9px, 9999px, 53px, 0); }
+            70% { clip: rect(131px, 9999px, 88px, 0); }
+            80% { clip: rect(45px, 9999px, 111px, 0); }
+            90% { clip: rect(2px, 9999px, 64px, 0); }
+            100% { clip: rect(100px, 9999px, 5px, 0); }
+        }
+
+        @keyframes glitch-anim2 {
+            0% { clip: rect(76px, 9999px, 116px, 0); }
+            11% { clip: rect(3px, 9999px, 42px, 0); }
+            22% { clip: rect(122px, 9999px, 85px, 0); }
+            33% { clip: rect(9px, 9999px, 131px, 0); }
+            44% { clip: rect(90px, 9999px, 73px, 0); }
+            55% { clip: rect(15px, 9999px, 145px, 0); }
+            66% { clip: rect(134px, 9999px, 102px, 0); }
+            77% { clip: rect(47px, 9999px, 2px, 0); }
+            88% { clip: rect(111px, 9999px, 55px, 0); }
+            99% { clip: rect(59px, 9999px, 118px, 0); }
+            100% { clip: rect(125px, 9999px, 12px, 0); }
+        }
+
+        /* Sticker animation on spawn */
+        .sticker-spawn {
+            animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            pointer-events: none;
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+            100% { transform: scale(1) rotate(15deg); opacity: 0.9; }
+        }
+
+        /* Marquee speed */
+        .marquee {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 2rem;
+        }
+
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 2rem;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(-100% - 2rem)); }
+        }
+
+        /* Custom scrollbar for chaotic kids */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--neon-pink);
+            border: 3px solid #000;
+            border-radius: 6px;
+        }
+
+        /* Floating particles */
+        .emoji-burst {
+            position: absolute;
+            font-size: 24px;
+            pointer-events: none;
+            animation: burst 0.8s ease-out forwards;
+        }
+
+        @keyframes burst {
+            0% { transform: translate(0, 0) scale(1); opacity: 1; }
+            100% { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="selection:bg-pink-500 selection:text-white" onclick="spawnSticker(event)">
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-black text-white neo-border-green px-6 py-3 rounded-lg flex items-center gap-3">
+            <span class="text-xl">🔥</span>
+            <span id="toast-msg" class="code-font font-bold text-sm">Copied to clipboard!</span>
+        </div>
+    </div>
+
+    <!-- MAIN CRINGE HEADLINE MARQUEE -->
+    <div class="bg-[#ff007f] text-black py-2 overflow-hidden border-b-4 border-black font-bold text-sm tracking-wider uppercase code-font z-40 relative">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>⚠️ SYSTEM ALERT: ALEEYA'S DELUSION LEVELS HAVE CRITICAL OVERFLOW ⚠️</span>
+                <span>🔥 43 CERTIFIED LIES DETECTED IN 2026-2027 🔥</span>
+                <span>🚨 PROCEED WITH EXTREME GULLIBILITY OR BE GASLIGHTED 🚨</span>
+                <span>💅 SHE LIES, SHE GIRLBOSSES, SHE GETS KANTOI 💅</span>
+            </div>
+            <!-- Duplicate for infinite effect -->
+            <div class="marquee-content" aria-hidden="true">
+                <span>⚠️ SYSTEM ALERT: ALEEYA'S DELUSION LEVELS HAVE CRITICAL OVERFLOW ⚠️</span>
+                <span>🔥 43 CERTIFIED LIES DETECTED IN 2026-2027 🔥</span>
+                <span>🚨 PROCEED WITH EXTREME GULLIBILITY OR BE GASLIGHTED 🚨</span>
+                <span>💅 SHE LIES, SHE GIRLBOSSES, SHE GETS KANTOI 💅</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden py-16">
+        <!-- Floating chaotic background grids -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#adff2f_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+        
+        <!-- Chaotic Stickers/Doodles placed decoratively around the hero -->
+        <div class="absolute top-10 left-10 hidden md:block bg-yellow-300 text-black px-4 py-2 rotate-[-12deg] rounded neo-border font-bold text-xs code-font z-10">
+            ✨ #1 GASLIGHTER IN SELANGOR ✨
+        </div>
+        <div class="absolute bottom-16 right-12 hidden md:block bg-cyan-300 text-black px-4 py-2 rotate-[15deg] rounded neo-border font-bold text-xs code-font z-10">
+            🤡 100% NO CAP (ACTUALLY ALL CAP) 🤡
+        </div>
+        <div class="absolute top-1/4 right-20 hidden lg:block text-6xl rotate-[25deg] filter drop-shadow-[4px_4px_0_rgba(0,0,0,1)] z-10">
+            🤥
+        </div>
+        <div class="absolute bottom-1/4 left-16 hidden lg:block text-5xl rotate-[-35deg] filter drop-shadow-[4px_4px_0_rgba(0,0,0,1)] z-10">
+            💸
+        </div>
+
+        <!-- The core Hero Box -->
+        <div class="max-w-4xl mx-auto z-20">
+            <p class="text-[#adff2f] code-font font-bold uppercase tracking-widest text-sm md:text-base mb-4 animate-pulse">
+                🚀 A SATIRICAL & CHAO-TIK CHRONICLE
+            </p>
+            
+            <div class="glitch-wrapper mb-6">
+                <h1 class="heading-font text-5xl md:text-8xl text-white font-extrabold tracking-tighter uppercase relative leading-none filter drop-shadow-[6px_6px_0_#ff007f]">
+                    ALEEYA<br>NATASHA
+                </h1>
+                <p class="heading-font text-2xl md:text-4xl text-black bg-[#adff2f] inline-block px-4 py-1 mt-4 rotate-[-1deg] neo-border">
+                    THE 43 BIGGEST HOAXES
+                </p>
+            </div>
+
+            <p class="max-w-xl mx-auto text-gray-300 text-sm md:text-base md:leading-relaxed px-4 mb-8">
+                Welcome to the official, 100% verified (by her delusion) list of Aleeya Natasha’s legendary lies, overclaims, and awkward moments from 2026 to 2027. Read, click, copy, and try not to pass out from cringe.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#hoax-tracker" class="w-full sm:w-auto bg-[#ff007f] text-white hover:bg-pink-600 px-8 py-4 rounded-none font-bold text-lg neo-border uppercase tracking-wider text-center transition-transform">
+                    👀 View the Lies
+                </a>
+                <a href="#quiz-zone" class="w-full sm:w-auto bg-[#adff2f] text-black hover:bg-lime-400 px-8 py-4 rounded-none font-bold text-lg neo-border uppercase tracking-wider text-center transition-transform">
+                    🧠 Take the Delusion Quiz
+                </a>
+            </div>
+        </div>
+
+        <!-- Interactive hint -->
+        <p class="absolute bottom-6 text-gray-500 text-xs code-font animate-bounce pointer-events-none">
+            🖱️ CLICK ANYWHERE ON SCREEN TO DROPP STICKERS & DECORATE HER DOWNFALL
+        </p>
+    </header>
+
+    <!-- QUICK DELUSION METRICS -->
+    <section class="bg-black border-y-4 border-black py-12 px-4 relative z-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <div class="bg-[#11111b] p-6 neo-border border-white/10 text-center relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-[#ff007f] group-hover:h-full transition-all duration-200 z-0"></div>
+                <div class="relative z-10">
+                   <p id="stat-total-hoaxes" class="text-4xl md:text-5xl font-black heading-font text-[#ff007f] group-hover:text-black mb-1">43</p>
+                    <p class="text-xs uppercase font-bold tracking-wider text-gray-400 group-hover:text-black code-font">Total Hoaxes Debunked</p>
+                </div>
+            </div>
+
+            <div class="bg-[#11111b] p-6 neo-border border-white/10 text-center relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-[#adff2f] group-hover:h-full transition-all duration-200 z-0"></div>
+                <div class="relative z-10">
+                    <p class="text-4xl md:text-5xl font-black heading-font text-[#adff2f] group-hover:text-black mb-1">99.9%</p>
+                    <p class="text-xs uppercase font-bold tracking-wider text-gray-400 group-hover:text-black code-font">Pure Delusion Rate</p>
+                </div>
+            </div>
+
+            <div class="bg-[#11111b] p-6 neo-border border-white/10 text-center relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-cyan-400 group-hover:h-full transition-all duration-200 z-0"></div>
+                <div class="relative z-10">
+                    <p class="text-4xl md:text-5xl font-black heading-font text-cyan-400 group-hover:text-black mb-1">2 Years</p>
+                    <p class="text-xs uppercase font-bold tracking-wider text-gray-400 group-hover:text-black code-font">Active Lie Cycle (2026-27)</p>
+                </div>
+            </div>
+
+            <div class="bg-[#11111b] p-6 neo-border border-white/10 text-center relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-yellow-400 group-hover:h-full transition-all duration-200 z-0"></div>
+                <div class="relative z-10">
+                    <p class="text-4xl md:text-5xl font-black heading-font text-yellow-400 group-hover:text-black mb-1">0</p>
+                    <p class="text-xs uppercase font-bold tracking-wider text-gray-400 group-hover:text-black code-font">Regrets Felt So Far</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE GAME ZONE: DELULU RUNNER -->
+    <section id="game-zone" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
+        <div class="bg-black text-white p-6 md:p-8 border-4 border-black neo-border-pink relative overflow-hidden">
+            <!-- Animated background grids for game feel -->
+            <div class="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+                <!-- Game Info -->
+                <div class="lg:w-2/5 space-y-4">
+                    <span class="bg-[#ff007f] text-white text-xs font-black uppercase px-3 py-1 code-font rounded tracking-wider animate-pulse">
+                        🎮 RETRO ARCADE MINI-GAME
+                    </span>
+                    <h2 class="heading-font text-3xl md:text-5xl font-black uppercase leading-tight text-white">
+                        DELULU RUNNER:<br><span class="text-[#adff2f]">ESCAPE THE KANTOI!</span>
+                    </h2>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Control Aleeya's inner consciousness! Catch the flying <span class="text-[#adff2f] font-bold">Delusion Items</span> to grow her ego, but dodge the incoming <span class="text-red-500 font-bold">Reality Checks</span> at all costs. One single reality check and she gets totally <span class="uppercase text-[#ff007f] font-bold">Kantoi</span>!
+                    </p>
+
+                    <!-- Game Instructions Card -->
+                    <div class="bg-[#11111b] border-2 border-neutral-800 p-4 rounded text-xs space-y-2 code-font">
+                        <div class="flex items-center gap-2">
+                            <span class="text-emerald-400 text-lg">🟢 CATCH (+10 Pts):</span>
+                            <span>🤥 (Lies), 💸 (Fake Money), 💅 (Nail Polish), 🏎️ (Pink Cybertruck)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-rose-500 text-lg">🔴 DODGE (INSTANT END):</span>
+                            <span>🩴 (Mom's Slipper), 🍜 (Maggi Cups), 👨 (Cousin Azman), ⏰ (Fact-Check)</span>
+                        </div>
+                        <p class="text-gray-500 italic mt-2">
+                            ⌨️ Desktop: Use LEFT / RIGHT arrows or A / D keys.<br>📱 Mobile: Tap the huge NEON buttons below the screen.
+                        </p>
+                    </div>
+
+                    <!-- Dynamic High Score Stat -->
+                    <div class="flex items-center gap-4 bg-[#adff2f] text-black px-4 py-3 font-black text-sm uppercase code-font neo-border">
+                        <span>🏆 High Score: <span id="game-highscore">0</span></span>
+                        <span>⚡ Sound: <button id="sound-toggle-btn" onclick="toggleGameSound()" class="bg-black text-white px-2.5 py-0.5 text-xs rounded hover:bg-neutral-800">ON</button></span>
+                    </div>
+                </div>
+
+                <!-- Game Screen Canvas Container -->
+                <div class="w-full lg:w-3/5 flex flex-col items-center">
+                    <div class="relative w-full aspect-[4/3] bg-[#09090e] border-4 border-black overflow-hidden shadow-2xl">
+                        <!-- Canvas Element -->
+                        <canvas id="gameCanvas" class="w-full h-full block"></canvas>
+
+                        <!-- Absolute HUD overlays on top of canvas for state management -->
+                        <!-- Start Screen Overlay -->
+                        <div id="game-start-overlay" class="absolute inset-0 bg-black/90 flex flex-col items-center justify-center text-center p-6 z-20">
+                            <span class="text-6xl mb-4 animate-bounce">💅</span>
+                            <h3 class="heading-font text-2xl md:text-3xl font-black text-[#adff2f] uppercase">READY TO GASLIGHT?</h3>
+                            <p class="text-xs text-gray-400 code-font max-w-sm mt-2 mb-6">
+                                The world isn't ready for your truth. Protect your delusions from the cold, hard facts of Selangor!
+                            </p>
+                            <button onclick="startGame()" class="bg-[#ff007f] hover:bg-pink-600 text-white font-bold py-3 px-8 text-sm uppercase tracking-wider neo-border code-font">
+                                START GENERATING LIES
+                            </button>
+                        </div>
+
+                        <!-- Game Over Screen Overlay -->
+                        <div id="game-over-overlay" class="absolute inset-0 bg-black/95 hidden flex flex-col items-center justify-center text-center p-6 z-20">
+                            <span class="text-6xl mb-2">💀</span>
+                            <h3 class="heading-font text-3xl font-black text-red-500 uppercase">💥 KANTOI WEH! 💥</h3>
+                            <p class="text-sm text-gray-300 code-font mt-1">You ran straight into absolute reality.</p>
+                            
+                            <div class="my-6 bg-[#11111b] border-2 border-dashed border-red-500/50 px-6 py-4 rounded max-w-xs mx-auto">
+                                <p class="text-[10px] text-gray-500 uppercase code-font">Your Ego Rating</p>
+                                <p id="game-final-score" class="text-4xl font-black text-[#adff2f] heading-font">Score: 0</p>
+                                <p id="game-score-eval" class="text-xs font-bold text-gray-400 mt-1 uppercase code-font">"Amateur Storyteller"</p>
+                            </div>
+
+                            <div class="flex flex-wrap gap-3 justify-center">
+                                <button onclick="startGame()" class="bg-[#adff2f] text-black hover:bg-lime-400 font-bold py-2 px-5 text-xs uppercase tracking-wider neo-border code-font">
+                                    🔄 TRY AGAIN
+                                </button>
+                                <button onclick="shareGameScore()" class="bg-[#ff007f] text-white hover:bg-pink-600 font-bold py-2 px-5 text-xs uppercase tracking-wider neo-border code-font">
+                                    📣 BRAG TO FRIENDS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Touch Controls for Mobile Players -->
+                    <div class="flex w-full gap-4 mt-4">
+                        <button id="btn-left" class="flex-1 bg-cyan-400 hover:bg-cyan-300 active:translate-y-1 text-black font-black py-4 rounded-none border-4 border-black text-center select-none active:bg-cyan-500 neo-border" style="touch-action: manipulation;">
+                            ⬅️ MOVE LEFT
+                        </button>
+                        <button id="btn-right" class="flex-1 bg-[#ff007f] hover:bg-pink-500 active:translate-y-1 text-white font-black py-4 rounded-none border-4 border-black text-center select-none active:bg-pink-600 neo-border" style="touch-action: manipulation;">
+                            MOVE RIGHT ➡️
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE DELUSION METER CALC GAME -->
+    <section class="max-w-6xl mx-auto px-4 py-16 relative z-20">
+        <div class="bg-yellow-300 text-black p-8 neo-border flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="md:w-1/2">
+                <h3 class="heading-font text-2xl md:text-4xl font-black uppercase mb-4">
+                    ⚖️ THE DYNAMIC DELUSION CALIBRATOR
+                </h3>
+                <p class="text-sm md:text-base leading-relaxed font-semibold">
+                    We've ranked her lies, but we need you to estimate how much she needs help. Choose your active diagnostic perception level. Click on any card down there to add to your clinical "Overclaim Meter"!
+                </p>
+                
+                <!-- Quick interactive counter -->
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="bg-black text-[#adff2f] px-3 py-1 font-bold text-xs uppercase rounded code-font">
+                        Selected Lies: <span id="selected-count">0</span>/43
+                    </span>
+                    <span id="delusion-verdict" class="bg-black text-[#ff007f] px-3 py-1 font-bold text-xs uppercase rounded code-font">
+                        Status: Standard Civilian
+                    </span>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 w-full flex flex-col justify-center items-center">
+                <div class="w-full bg-black/20 h-10 rounded-none border-4 border-black relative overflow-hidden">
+                    <div id="meter-bar" class="bg-[#ff007f] h-full w-[10%] transition-all duration-500 ease-out flex items-center justify-end pr-2 font-bold text-white text-xs">
+                        10%
+                    </div>
+                </div>
+                <p id="meter-description" class="font-bold uppercase text-xs tracking-wider mt-3 text-center text-black code-font">
+                    "NORMAL PERSON STAGE" (Sikit overclaim but ok)
+                </p>
+                <button onclick="resetDelusionMeter()" class="mt-4 bg-black text-white hover:bg-neutral-800 px-6 py-2 font-bold text-xs code-font uppercase neo-border border-white/20">
+                    🔄 Reset Clinical File
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE NEW HOAX SUBMISSION FORM -->
+    <section id="report-zone" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
+        <div class="bg-[#11111b] border-4 border-black neo-border-green p-6 md:p-8 relative overflow-hidden">
+            <!-- Decorative background elements -->
+            <div class="absolute top-[-20px] right-[-20px] text-8xl opacity-10 rotate-12 pointer-events-none">📝</div>
+            
+            <div class="mb-8 relative z-10">
+                <span class="bg-[#adff2f] text-black text-xs font-black uppercase px-3 py-1 code-font rounded tracking-wider animate-pulse">
+                    ⚠️ LIVE DATABASE UPDATE
+                </span>
+                <h2 class="heading-font text-3xl md:text-5xl font-extrabold uppercase mt-3 text-white leading-none">
+                    LOG A NEW DELUSION
+                </h2>
+                <p class="text-gray-400 mt-2 text-sm max-w-lg">
+                    Did Aleeya strike again? Submit her latest overclaim below to permanently log it into the official Selangor archives.
+                </p>
+            </div>
+            
+            <form id="new-hoax-form" class="grid grid-cols-1 md:grid-cols-2 gap-5 code-font relative z-10">
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Hoax Title</label>
+                    <input type="text" id="new-title" required placeholder="e.g. The Fake Rolex Incident" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
+                </div>
+                
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Category</label>
+                    <input type="text" id="new-category" required placeholder="e.g. Fake Rich, Academic Lying" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
+                </div>
+
+                <div class="flex flex-col gap-2 md:col-span-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">The Claim (What she said)</label>
+                    <textarea id="new-claim" required rows="2" placeholder="Describe the absolute nonsense she tried to pass off as fact..." class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors"></textarea>
+                </div>
+
+                <div class="flex flex-col gap-2 md:col-span-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">The Reality (Kantoi Fact)</label>
+                    <textarea id="new-reality" required rows="2" placeholder="How did she get exposed? What actually happened..." class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors"></textarea>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Tier Ranking</label>
+                    <select id="new-tier" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white transition-colors cursor-pointer appearance-none">
+                        <option value="S">🔥 S-TIER: GOD-LEVEL DELUSION</option>
+                        <option value="A">🤥 A-TIER: ALMOST BELIEVED IT</option>
+                        <option value="B">🤦‍♂️ B-TIER: BRO WHO LET HER TALK</option>
+                        <option value="C">🤡 C-TIER: CRINGE INTENSIFIES</option>
+                        <option value="D" selected>🗑️ D-TIER: LOW EFFORT LIES</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">Delusion Scale (1-100%)</label>
+                    <input type="number" id="new-scale" required min="1" max="100" value="50" class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors">
+                </div>
+
+                <div class="md:col-span-2 mt-2">
+                    <button type="submit" class="w-full bg-[#ff007f] text-white hover:bg-pink-600 font-bold py-4 text-lg uppercase tracking-wider neo-border transition-transform">
+                        🚨 PUBLISH LIE TO DATABASE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- THE HOAX TRACKER INTERACTIVE FILTER & LIST -->
+    <section id="hoax-tracker" class="max-w-6xl mx-auto px-4 py-12 relative z-20">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+            <div>
+                <h2 class="heading-font text-3xl md:text-6xl font-extrabold uppercase leading-none text-white tracking-tight">
+                    THE HOAX BOARD <span class="text-[#ff007f]">💅</span>
+                </h2>
+                <p class="text-gray-400 mt-2 max-w-lg">
+                    Search her catalog, filter by tier, and click cards to toggle her active delusional index. Use the pink buttons to grab quotes for gossip!
+                </p>
+            </div>
+
+            <!-- Search Bar inside Brutalist Input Wrapper -->
+            <div class="w-full md:w-80">
+                <div class="relative">
+                    <input id="search-hoax" type="text" placeholder="Search a lie... (e.g. Haechan, London)" class="w-full bg-black border-4 border-black focus:border-[#ff007f] outline-none px-4 py-3 font-semibold text-white placeholder-gray-500 neo-border-green transition-all" oninput="filterHoaxes()">
+                    <span class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500"><i class="fa-solid fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Tags -->
+        <div class="flex flex-wrap gap-2 mb-8" id="tier-filters">
+            <button onclick="setFilter('all')" class="filter-btn active-filter bg-[#ff007f] text-white px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                ALL LIES (43)
+            </button>
+            <button onclick="setFilter('S')" class="filter-btn bg-black text-[#ff007f] border border-pink-500 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🔥 S-TIER: GOD-LEVEL DELUSION
+            </button>
+            <button onclick="setFilter('A')" class="filter-btn bg-black text-[#adff2f] border border-lime-500 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🤥 A-TIER: ALMOST BELIEVED IT
+            </button>
+            <button onclick="setFilter('B')" class="filter-btn bg-black text-cyan-400 border border-cyan-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🤦‍♂️ B-TIER: BRO WHO LET HER TALK
+            </button>
+            <button onclick="setFilter('C')" class="filter-btn bg-black text-yellow-400 border border-yellow-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🤡 C-TIER: CRINGE INTENSIFIES
+            </button>
+            <button onclick="setFilter('D')" class="filter-btn bg-black text-purple-400 border border-purple-400 px-4 py-2 font-bold text-xs uppercase tracking-wider code-font neo-border hover:scale-105">
+                🗑️ D-TIER: LOW EFFORT LIES
+            </button>
+        </div>
+
+        <!-- Responsive Grid for cards -->
+        <div id="hoaxes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300">
+            <!-- Dynamic Injection Area -->
+        </div>
+
+        <!-- Empty state fallback -->
+        <div id="empty-state" class="hidden text-center py-16 text-gray-500">
+            <span class="text-6xl">🙈</span>
+            <p class="font-bold uppercase tracking-widest mt-4">Aleeya didn't make up a lie with that keyword yet... Try another one!</p>
+        </div>
+    </section>
+
+    <!-- TRIVIA CHALLENGE / GASLIGHT TRIVIA -->
+    <section id="quiz-zone" class="bg-[#11111b] border-t-4 border-black py-16 relative z-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <span class="bg-[#adff2f] text-black text-xs font-black uppercase px-3 py-1 code-font rounded">Meme Academy</span>
+                <h2 class="heading-font text-3xl md:text-5xl font-extrabold uppercase mt-3 text-white">
+                    🧠 THE ALEEYA GASLIGHT QUIZ
+                </h2>
+                <p class="text-gray-400 mt-2 max-w-lg mx-auto">
+                    Are you actually smart or will you fall for Aleeya's elite mind tricks? Prove your critical thinking capability below!
+                </p>
+            </div>
+
+            <!-- Quiz Main Box -->
+            <div id="quiz-box" class="bg-black text-white p-8 rounded-none border-4 border-black neo-border-pink">
+                <div id="quiz-intro">
+                    <p class="text-center text-lg mb-6 leading-relaxed code-font font-bold">
+                        Think you know all of Aleeya's greatest hits? We will test you on 4 of her absolute peak delusional incidents. If you score perfect, you win an imaginary medal!
+                    </p>
+                    <button onclick="startQuiz()" class="w-full bg-[#ff007f] text-white hover:bg-pink-600 font-bold py-4 uppercase tracking-wider neo-border">
+                        🚀 Start Testing My Gullibility
+                    </button>
+                </div>
+
+                <div id="quiz-active" class="hidden">
+                    <div class="flex items-center justify-between text-xs font-bold uppercase code-font text-gray-500 mb-6">
+                        <span>Question <span id="quiz-current">1</span> of 4</span>
+                        <span>Score: <span id="quiz-score">0</span></span>
+                    </div>
+
+                    <h4 id="quiz-question" class="heading-font text-xl md:text-2xl font-black mb-8 leading-snug">
+                        Question template text goes here...
+                    </h4>
+
+                    <div class="space-y-4" id="quiz-answers">
+                        <!-- Dynamic buttons go here -->
+                    </div>
+                </div>
+
+                <div id="quiz-result" class="hidden text-center">
+                    <span class="text-6xl block mb-4" id="result-emoji">🏆</span>
+                    <h4 class="heading-font text-2xl md:text-3xl font-extrabold uppercase mb-2" id="result-title">
+                        Absolute Champion!
+                    </h4>
+                    <p class="text-gray-400 mb-8 max-w-md mx-auto" id="result-desc">
+                        You successfully avoided all her gaslighting traps and held high authority over the objective facts!
+                    </p>
+                    <button onclick="restartQuiz()" class="bg-[#adff2f] text-black hover:bg-lime-400 font-bold px-8 py-3 uppercase tracking-wider neo-border text-sm">
+                        🔄 Play Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNHINGED HOAX GENERATOR INTERACTIVE COMPONENT -->
+    <section class="max-w-4xl mx-auto px-4 py-16 relative z-20">
+        <div class="bg-cyan-300 text-black p-8 neo-border flex flex-col items-center text-center">
+            <span class="bg-black text-white px-3 py-1 font-bold text-xs uppercase code-font rounded mb-3">Infinite Delusion Loop</span>
+            <h2 class="heading-font text-3xl md:text-5xl font-black uppercase mb-4 leading-none">
+                🤖 THE LIKELY LIES GENERATOR
+            </h2>
+            <p class="text-sm md:text-base max-w-xl font-medium mb-8">
+                Is 43 not enough for you? Generate what Aleeya's next big hoax is likely going to be in 2028 based on modern Malaysian Gen Z slang.
+            </p>
+
+            <div class="bg-black text-white p-6 neo-border border-black w-full min-h-[120px] flex items-center justify-center relative mb-8">
+                <p id="generated-hoax-text" class="heading-font text-lg md:text-2xl font-bold tracking-tight italic">
+                    "Aleeya Natasha claimed she was handpicked to buy the entire Pavilion KL mall using Shopee Coins but got kantoi when her card got declined at 7-Eleven."
+                </p>
+            </div>
+
+            <button onclick="generateHoax()" class="bg-black text-white hover:bg-neutral-800 font-bold px-8 py-4 uppercase tracking-wider neo-border flex items-center gap-2">
+                ⚡ MAKE NEW LIE 
+            </button>
+        </div>
+    </section>
+
+    <!-- MOCK "APOLOGY VIDEO" SIMULATION -->
+    <section class="bg-black border-t-4 border-black py-16 relative z-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="heading-font text-2xl md:text-4xl text-center uppercase font-black mb-8 tracking-tight">
+                😭 THE OFFICIAL APOLOGY STATEMENT (MOCK)
+            </h2>
+
+            <div class="bg-[#09090e] border-4 border-neutral-800 p-8 rounded-none relative overflow-hidden">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                    <span class="text-xs text-gray-500 font-mono ml-2">apology_video_draft_v3.mp4</span>
+                </div>
+
+                <div class="aspect-video bg-neutral-950 flex flex-col justify-center items-center relative border border-neutral-800 p-6 text-center">
+                    <div id="apology-container">
+                        <span class="text-5xl block mb-4 animate-bounce">💅</span>
+                        <p id="apology-text" class="text-sm md:text-base font-medium text-gray-300 italic">
+                            "Uhm... guys... I think there has been a lot of misunderstanding about what I claimed to have done. It wasn't a hoax... it was simply a projection of my inner potential."
+                        </p>
+                        <button onclick="cycleApologyText()" class="mt-6 bg-[#ff007f] text-white hover:bg-pink-600 px-6 py-2 font-bold text-xs code-font uppercase rounded">
+                            👉 Hear her keep gaslighting
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH SATIRICAL NOTES -->
+    <footer class="bg-black border-t-4 border-black py-12 px-4 text-center text-gray-500 relative z-20">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="heading-font text-2xl text-white font-black mb-4 uppercase">
+                ALEEYA NATASHA
+            </h3>
+            <p class="text-xs max-w-md mx-auto mb-8">
+                All jokes aside, this is an affectionate roasting page. If you are actually Aleeya, we hope you don't file a police report against your friends. Delusion is simply a form of self-expression. Live, laugh, lie, fr fr. 🤙
+            </p>
+            <div class="flex justify-center gap-6 mb-8 text-lg">
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="text-[10px] code-font uppercase">
+                &copy; 2026-2027 ROAST LABS INC. NO RIGHTS RESERVED. SHE WILL DENY ALL THIS HAPPENED ANYWAY.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // HOAX DATA OBJECT
+        const hoaxes = [
+            // S-TIER
+            {
+                id: 1,
+                title: "The NCT Haechan SS15 Date",
+                tier: "S",
+                claim: "Claimed she was secretly dating NCT's Haechan and was spotted holding hands at a Mamak in SS15.",
+                reality: "Kantoi because the Haechan in question was wearing Selipar Jepun and eating Roti Tisu, later discovered to be her cousin Azman.",
+                scale: 100,
+                category: "Delusional Dating"
+            },
+            {
+                id: 2,
+                title: "The Coachella VIP Lie",
+                tier: "S",
+                claim: "Posted a fancy 'Coachella 2026' fit vlog claiming she was flying out private.",
+                reality: "There was a 'Keropok Lekor 50 sen' banner in her background. She was actually at Klebang sand dunes in Melaka 'healing'.",
+                scale: 95,
+                category: "Faux Travel"
+            },
+            {
+                id: 3,
+                title: "Datuk Awie's Secret Child",
+                tier: "S",
+                claim: "Broke into a full rock performance at family dinner claiming she is Datuk Awie's biological daughter.",
+                reality: "Vocal range was totally absent. Her dad is actually Pak Ahmad, a retired postman from Kajang.",
+                scale: 98,
+                category: "Family Lore"
+            },
+            {
+                id: 4,
+                title: "The Tesla Pink Cybertruck Win",
+                tier: "S",
+                claim: "Swore Elon Musk personally DM'd her to gift her a customized pink Cybertruck for being 'iconic'.",
+                reality: "She was caught photoshopping a hot pink hue on a grey Cybertruck photo she saw in a Bangsar car park.",
+                scale: 92,
+                category: "Fake Wins"
+            },
+            {
+                id: 5,
+                title: "The Harvard Scholarship",
+                tier: "S",
+                claim: "Told her group chat she received a full-ride scholarship for 'Meme Studies and Advanced Gaslighting'.",
+                reality: "Email sender address was 'harvard-official-no-scam@gmail.com' and had several spelling errors.",
+                scale: 99,
+                category: "Academic Lying"
+            },
+            {
+                id: 6,
+                title: "The RM10 Million Air Balang Empire",
+                tier: "S",
+                claim: "Stated her side-business selling 'Air Balang Solero' at a night market made her RM10,000,000 in 3 days.",
+                reality: "Her actual bank account balance was RM14.50 and her mother was the one doing all the heavy lifting.",
+                scale: 97,
+                category: "Fake Rich"
+            },
+            {
+                id: 7,
+                title: "Paris Fashion Week Runway Run",
+                tier: "S",
+                claim: "Claimed she was a surprise walk-on model for Balenciaga's autumn line in Paris.",
+                reality: "Her body shadow was pointed the wrong way and she was visibly holding a Mydin plastic shopping bag.",
+                scale: 94,
+                category: "Faux Modeling"
+            },
+            {
+                id: 8,
+                title: "The 100% Japanese DNA Test",
+                tier: "S",
+                claim: "Stated her ancestor was a high-status samurai from Kyoto, claiming she holds 100% Japanese royalty status.",
+                reality: "Her family tree has been strictly based in Kelantan and Kedah for at least 6 generations.",
+                scale: 96,
+                category: "Genetic Gaslighting"
+            },
+            // A-TIER
+            {
+                id: 9,
+                title: "The 'Organic Pasta Only' Phase",
+                tier: "A",
+                claim: "Announced she transcended instant food and only eats organic, hand-rolled pasta from scratch.",
+                reality: "Friends found 12 empty packets of Maggi Curry stuffed under her bedroom mattress.",
+                scale: 85,
+                category: "Diet Lies"
+            },
+            {
+                id: 10,
+                title: "CEO of TechTarik-GPT",
+                tier: "A",
+                claim: "Claimed she was developing 'Malaysian attitude' ChatGPT competitor software.",
+                reality: "The codebase was just a single HTML file with custom prompts full of hard-coded insults.",
+                scale: 88,
+                category: "Tech Guru"
+            },
+            {
+                id: 11,
+                title: "K-Beauty Model Scout Incident",
+                tier: "A",
+                claim: "Stated a prominent talent agent chased her down the escalators in Pavilion KL begging her to sign.",
+                reality: "It was an insurance salesperson trying to sell her a premium protection plan.",
+                scale: 82,
+                category: "Delusional Dating"
+            },
+            {
+                id: 12,
+                title: "The 'PMX is My Uncle' Claim",
+                tier: "A",
+                claim: "Casually dropped that the Prime Minister is her direct relative and they discuss state matters over dinner.",
+                reality: "Her proof was a cropped selfie at a campaign rally where she was standing 200 rows back.",
+                scale: 89,
+                category: "Political Clout"
+            },
+            {
+                id: 13,
+                title: "Taylor Swift Singing Pontianak",
+                tier: "A",
+                claim: "Recorded a spooky video claiming a ghost in her backyard was singing Taylor Swift songs in a high pitched tone.",
+                reality: "It was her little sister trying to hit the high note in 'Cruel Summer' behind the laundry room.",
+                scale: 80,
+                category: "Ghosts & Ghouls"
+            },
+            {
+                id: 14,
+                title: "BitCoin Kid Millionaire",
+                tier: "A",
+                claim: "Claimed she bought 20 Bitcoin back in 2012 when she was an 8 year old visionary.",
+                reality: "She didn't even have an email address or access to a bank account at that point.",
+                scale: 87,
+                category: "Fake Rich"
+            },
+            {
+                id: 15,
+                title: "The '2-Hour Sleep' Grindset",
+                tier: "A",
+                claim: "Posted motivational quotes at 4 AM daily saying her elite mind only requires 2 hours of rest.",
+                reality: "Regularly took massive naps from 10 AM to 6 PM every day with her phone on 'Do Not Disturb'.",
+                scale: 81,
+                category: "Diet Lies"
+            },
+            {
+                id: 16,
+                title: "The Mystery Yacht Trip",
+                tier: "A",
+                claim: "Posted pictures suggesting she was celebrating on a private yacht with elites in Langkawi.",
+                reality: "It was the cheap public ferry to Penang, and she spent the trip throwing up due to extreme sea sickness.",
+                scale: 84,
+                category: "Faux Travel"
+            },
+            {
+                id: 17,
+                title: "The Silent Hermit Detox",
+                tier: "A",
+                claim: "Declared she was entering a 1-week spiritual hermit silent retreat offline to heal.",
+                reality: "Seen viewing everyone's Instagram stories 4 minutes after they posted them on her alt account.",
+                scale: 86,
+                category: "Diet Lies"
+            },
+            // B-TIER
+            {
+                id: 18,
+                title: "Fluent In French Order",
+                tier: "B",
+                claim: "Claimed she became fluent in French over a long weekend and attempted to order in French.",
+                reality: "The waiter was from Kelantan, stared blankly, and she ultimately just pointed at 'Roti Canai'.",
+                scale: 75,
+                category: "Language Master"
+            },
+            {
+                id: 19,
+                title: "Gymshark Athlete Sponsor",
+                tier: "B",
+                claim: "Wrote 'Gymshark Family Partner' in her bio and posted intense lifting videos.",
+                reality: "Her 'sponsorship' was just her buying a fake Gymshark set from Shopee for RM12.",
+                scale: 72,
+                category: "Fake Wins"
+            },
+            {
+                id: 20,
+                title: "Lamborghini Collision Excuse",
+                tier: "B",
+                claim: "Told her group chat she missed the morning class because she was nudged by a Lamborghini in Bangsar.",
+                reality: "She actually tripped over a parked Myvi bumper while walking and reading Webtoon.",
+                scale: 79,
+                category: "Lame Excuses"
+            },
+            {
+                id: 21,
+                title: "The Private Jet iPad Hack",
+                tier: "B",
+                claim: "Posted an aesthetic sky picture with the caption 'These weekly business trips are so draining'.",
+                reality: "It was a close-up photo of her iPad wallpaper inside a completely dark toilet room.",
+                scale: 78,
+                category: "Faux Travel"
+            },
+            {
+                id: 22,
+                title: "Zouk Club Resident DJ",
+                tier: "B",
+                claim: "Bragged to everyone that she performed a guest techno set at Zouk over the weekend.",
+                reality: "She was standing on the general dance floor merely holding her friends' heavy handbags.",
+                scale: 70,
+                category: "Faux Modeling"
+            },
+            {
+                id: 23,
+                title: "The Spiderman Kitten Rescue",
+                tier: "B",
+                claim: "Claimed she climbed the exterior of a 10-story building to rescue a helpless stray cat.",
+                reality: "The cat was her own healthy house cat, who was simply sitting on top of her bedroom desk.",
+                scale: 71,
+                category: "Heroic Overclaim"
+            },
+            {
+                id: 24,
+                title: "Podcaster of the Year Nom",
+                tier: "B",
+                claim: "Stated her podcast 'Teh Tarik Thoughts' was nominated for national audio achievements.",
+                reality: "The show only has three lifetime listeners: herself, her mother, and her fake secondary Instagram account.",
+                scale: 76,
+                category: "Fake Wins"
+            },
+            {
+                id: 25,
+                title: "Tokyo Sneaker Plugin Plug",
+                tier: "B",
+                claim: "Said she has a secret underground Japanese plug who sends her unreleased Dunks directly.",
+                reality: "She buys all her second-hand shoes from the bundle shops down in Chow Kit.",
+                scale: 73,
+                category: "Fake Rich"
+            },
+            {
+                id: 26,
+                title: "Cafe Interior Designer Claim",
+                tier: "B",
+                claim: "Told her date, 'Yeah, I actually designed the visual interior concept of this cafe as a freelance gig.'",
+                reality: "She merely left a Google review saying they should probably add another potted plant.",
+                scale: 74,
+                category: "Heroic Overclaim"
+            },
+            {
+                id: 27,
+                title: "10-Minute Cold Plunge",
+                tier: "B",
+                claim: "Claimed she does 10-minute professional ice baths every morning for elite neuro-grindset control.",
+                reality: "Screamed at the top of her lungs and jumped out after 3 seconds of a cold shower in Genting.",
+                scale: 77,
+                category: "Diet Lies"
+            },
+            // C-TIER
+            {
+                id: 28,
+                title: "The '3-Day UK' Accent",
+                tier: "C",
+                claim: "Returned from a 3-day family trip to London speaking with a heavy British aristocracy accent.",
+                reality: "Constantly saying 'Can I get some wa'er please, mate' until everyone threatened to leave the table.",
+                scale: 65,
+                category: "Language Master"
+            },
+            {
+                id: 29,
+                title: "The Organic Kelp Serum",
+                tier: "C",
+                claim: "Asserted she formulated her own high-end skin repair serum using organic deep-sea kelp.",
+                reality: "It was plain drugstore lotion diluted with bathroom water and light blue food coloring.",
+                scale: 62,
+                category: "Tech Guru"
+            },
+            {
+                id: 30,
+                title: "The 'No TikTok' Brain Cleanse",
+                tier: "C",
+                claim: "Repeatedly told peers she deleted TikTok because it 'rots the attention span' and she reads classics instead.",
+                reality: "Had an active daily screen time of 9 hours using the 'TikTok Lite' app version.",
+                scale: 69,
+                category: "Diet Lies"
+            },
+            {
+                id: 31,
+                title: "Ethiopian Pour-over Snob",
+                tier: "C",
+                claim: "Mocked coffee franchise drinkers, stating she only touches single-origin hand-ground beans.",
+                reality: "Frequently caught drink Nescafe 3-in-1 with multiple spoons of sweetened condensed milk.",
+                scale: 60,
+                category: "Diet Lies"
+            },
+            {
+                id: 32,
+                title: "Backup Dancer for Legend",
+                tier: "C",
+                claim: "Stated she was an active backup stage dancer for an iconic Malaysian pop artist.",
+                reality: "She was in the extreme back of the crowded street doing the standard hand wave during National Day.",
+                scale: 61,
+                category: "Faux Modeling"
+            },
+            {
+                id: 33,
+                title: "The Romance Psychic Era",
+                tier: "C",
+                claim: "Claimed she could read emotional auras and predict when her friends would secure wealthy life partners.",
+                reality: "Predicted her classmate would marry a billionaire in 2026; the classmate became a monastic instead.",
+                scale: 68,
+                category: "Ghosts & Ghouls"
+            },
+            {
+                id: 34,
+                title: "High Pain Tattoo Master",
+                tier: "C",
+                claim: "Stated she has an incredibly rare high pain tolerance and fell asleep during her large tattoo process.",
+                reality: "It was a water-applied temporary sticker. She openly cried during a simple ear piercing.",
+                scale: 64,
+                category: "Heroic Overclaim"
+            },
+            {
+                id: 35,
+                title: "Competitive ML Leader",
+                tier: "C",
+                claim: "Claimed she was the tactical captain of a highly competitive Mobile Legends tournament squad.",
+                reality: "Her rank was stuck at Grandmaster, and she was heavily carried by her 12-year-old cousin.",
+                scale: 67,
+                category: "Tech Guru"
+            },
+            // D-TIER
+            {
+                id: 36,
+                title: "50 Classics Shelf Deco",
+                tier: "D",
+                claim: "Bought 50 heavy Russian literary novels claiming she digests them for intellectual nourishment.",
+                reality: "None of them have ever been opened; they are strictly used to raise her iPad stand height.",
+                scale: 50,
+                category: "Academic Lying"
+            },
+            {
+                id: 37,
+                title: "Michelin Wellington Sunday",
+                tier: "D",
+                claim: "Posted a flawless beef wellington pic claiming, 'Sundays are for baking from scratch, girls!'",
+                reality: "It was a cropped screenshot from a British food blog with the original watermark slightly visible.",
+                scale: 55,
+                category: "Diet Lies"
+            },
+            {
+                id: 38,
+                title: "Moving To New York Agency",
+                tier: "D",
+                claim: "Announced she got signed to a New York agency and was permanently moving out of Malaysia.",
+                reality: "She was simply relocating to a shared flat with two other girls in Cheras.",
+                scale: 58,
+                category: "Faux Travel"
+            },
+            {
+                id: 39,
+                title: "Allergic To Low Price Scents",
+                tier: "D",
+                claim: "Claimed her refined skin develops severe physical hives if she sprays anything costing under RM500.",
+                reality: "Her absolute favorite daily wear is 'Dashing Cool' which she steals from her older brother.",
+                scale: 51,
+                category: "Fake Rich"
+            },
+            {
+                id: 40,
+                title: "Meeting Henry Golding Photo",
+                tier: "D",
+                claim: "Uploaded a blurry photo from behind claiming she was having a chat with Henry Golding.",
+                reality: "Henry Golding was in London at the time; the man in the photo was a local durian seller.",
+                scale: 54,
+                category: "Delusional Dating"
+            },
+            {
+                id: 41,
+                title: "The 'No Study, Got Straight A's'",
+                tier: "D",
+                claim: "Claimed she never opens a book or pays attention but effortlessly gets straight A grades.",
+                reality: "Was caught studying in the local library cubicle with a small flashlight at 3 AM.",
+                scale: 59,
+                category: "Academic Lying"
+            },
+            {
+                id: 42,
+                title: "10-Item Minimalist Lifestyle",
+                tier: "D",
+                claim: "Declared she committed to radical minimalism and only owns 10 clothing essentials.",
+                reality: "Her closet was bulging with 400 separate items bought from online fast fashion sites.",
+                scale: 52,
+                category: "Diet Lies"
+            },
+            {
+                id: 43,
+                title: "Quitting Social Media Forever",
+                tier: "D",
+                claim: "Posted a lengthy, emotional essay stating she is permanently exiting the toxic online landscape.",
+                reality: "Posted a casual vanity selfie 2 hours later because 'the lighting in the bathroom was too good'.",
+                scale: 53,
+                category: "Lame Excuses"
+            }
+        ];
+
+        let activeFilter = 'all';
+        let selectedLies = new Set();
+        let currentQuizIndex = 0;
+        let quizScore = 0;
+
+        // ARCADE MINI-GAME STATE & VARIABLES
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        let gameLoopId = null;
+        let isGameRunning = false;
+        let isSoundEnabled = true;
+        let gameScore = 0;
+        let highscore = localStorage.getItem('delulu_highscore') || 0;
+        document.getElementById('game-highscore').innerText = highscore;
+
+        // Sound Synthesis engine using Web Audio API
+        let audioCtx = null;
+        function playSynthesizedSound(type) {
+            if (!isSoundEnabled) return;
+            try {
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                if (type === 'catch') {
+                    // Play a cheerful high dual-tone ping
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(523.25, audioCtx.currentTime); // C5
+                    osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15); // A5
+                    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.2);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.2);
+                } else if (type === 'gameover') {
+                    // Play an unhinged, decaying slide representing crashing down to reality
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(180, audioCtx.currentTime);
+                    osc.frequency.linearRampToValueAtTime(40, audioCtx.currentTime + 0.6);
+                    gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.65);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.7);
+                } else if (type === 'start') {
+                    // Rising synth chord
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(261.63, audioCtx.currentTime); // C4
+                    osc.frequency.exponentialRampToValueAtTime(523.25, audioCtx.currentTime + 0.3); // C5
+                    gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.35);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.4);
+                }
+            } catch (e) {
+                console.log("Audio synthesis error: ", e);
+            }
+        }
+
+        function toggleGameSound() {
+            isSoundEnabled = !isSoundEnabled;
+            document.getElementById('sound-toggle-btn').innerText = isSoundEnabled ? "ON" : "OFF";
+        }
+
+        // Game Configuration
+        const player = {
+            x: 180,
+            y: 0, // calculated relative to canvas height
+            width: 50,
+            height: 50,
+            speed: 8,
+            targetX: 180,
+            emoji: '💅' // represent Aleeya
+        };
+
+        let items = [];
+        let particles = [];
+        const itemTemplates = {
+            delusions: [
+                { char: '🤥', color: '#adff2f', label: 'Lie' },
+                { char: '💸', color: '#00ffff', label: 'Cash' },
+                { char: '💅', color: '#ff007f', label: 'Glam' },
+                { char: '🏎️', color: '#ff007f', label: 'Tesla' },
+                { char: '👑', color: '#eab308', label: 'Royalty' }
+            ],
+            realities: [
+                { char: '🩴', color: '#f43f5e', label: 'Slipper' },
+                { char: '🍜', color: '#fb7185', label: 'Maggi' },
+                { char: '👨', color: '#f43f5e', label: 'Azman' },
+                { char: '⏰', color: '#e11d48', label: 'Reality' },
+                { char: '👮', color: '#991b1b', label: 'Kantoi' }
+            ]
+        };
+
+        // Keys mapping
+        const keys = {
+            left: false,
+            right: false
+        };
+
+        // Keyboard listeners
+        window.addEventListener('keydown', e => {
+            if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') keys.left = true;
+            if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') keys.right = true;
+        });
+
+        window.addEventListener('keyup', e => {
+            if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') keys.left = false;
+            if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') keys.right = false;
+        });
+
+        // Touch buttons mapping
+        const btnLeft = document.getElementById('btn-left');
+        const btnRight = document.getElementById('btn-right');
+
+        // Mouse/Touch triggers for continuous moving
+        let leftInterval, rightInterval;
+        btnLeft.addEventListener('mousedown', () => { keys.left = true; });
+        btnLeft.addEventListener('mouseup', () => { keys.left = false; });
+        btnLeft.addEventListener('mouseleave', () => { keys.left = false; });
+        btnLeft.addEventListener('touchstart', (e) => { e.preventDefault(); keys.left = true; }, {passive: false});
+        btnLeft.addEventListener('touchend', (e) => { e.preventDefault(); keys.left = false; }, {passive: false});
+
+        btnRight.addEventListener('mousedown', () => { keys.right = true; });
+        btnRight.addEventListener('mouseup', () => { keys.right = false; });
+        btnRight.addEventListener('mouseleave', () => { keys.right = false; });
+        btnRight.addEventListener('touchstart', (e) => { e.preventDefault(); keys.right = true; }, {passive: false});
+        btnRight.addEventListener('touchend', (e) => { e.preventDefault(); keys.right = false; }, {passive: false});
+
+        // Resize handler keeping game canvas proportioned
+        function resizeCanvas() {
+            const containerWidth = canvas.parentElement.clientWidth;
+            canvas.width = containerWidth;
+            canvas.height = containerWidth * 0.75; // Maintain 4:3 Aspect Ratio
+            
+            // Re-adjust player height position to bottom
+            player.y = canvas.height - player.height - 15;
+            if (player.x > canvas.width) {
+                player.x = canvas.width / 2;
+            }
+        }
+        window.addEventListener('resize', resizeCanvas);
+
+        // Game Engine Cycle
+        function startGame() {
+            playSynthesizedSound('start');
+            document.getElementById('game-start-overlay').classList.add('hidden');
+            document.getElementById('game-over-overlay').classList.add('hidden');
+            
+            resizeCanvas();
+            isGameRunning = true;
+            gameScore = 0;
+            items = [];
+            particles = [];
+            player.x = canvas.width / 2 - player.width / 2;
+
+            if (gameLoopId) cancelAnimationFrame(gameLoopId);
+            gameLoopId = requestAnimationFrame(gameLoop);
+        }
+
+        function createItem() {
+            // Adjust drop rate based on score
+            const spawnInterval = Math.max(15, 45 - Math.floor(gameScore / 30));
+            if (Math.random() * spawnInterval < 1) {
+                const isDelusion = Math.random() > 0.45; // 55% chance of reality check / difficulty
+                const templates = isDelusion ? itemTemplates.delusions : itemTemplates.realities;
+                const template = templates[Math.floor(Math.random() * templates.length)];
+                
+                items.push({
+                    x: Math.random() * (canvas.width - 30),
+                    y: -40,
+                    width: 32,
+                    height: 32,
+                    speed: Math.random() * 3 + 2.5 + Math.min(gameScore / 40, 5),
+                    isDelusion: isDelusion,
+                    char: template.char,
+                    color: template.color
+                });
+            }
+        }
+
+        function spawnCatchParticles(x, y, color) {
+            for (let i = 0; i < 8; i++) {
+                particles.push({
+                    x: x + 16,
+                    y: y + 16,
+                    vx: (Math.random() - 0.5) * 8,
+                    vy: (Math.random() - 0.5) * 8,
+                    radius: Math.random() * 4 + 2,
+                    color: color,
+                    alpha: 1,
+                    life: 0.93 // decay rate
+                });
+            }
+        }
+
+        function handleCollisions(item, index) {
+            // Standard AABB collision check
+            if (
+                item.x < player.x + player.width &&
+                item.x + item.width > player.x &&
+                item.y < player.y + player.height &&
+                item.y + item.height > player.y
+            ) {
+                if (item.isDelusion) {
+                    // Success catch
+                    gameScore += 10;
+                    playSynthesizedSound('catch');
+                    spawnCatchParticles(item.x, item.y, item.color);
+                    items.splice(index, 1);
+                } else {
+                    // HIT REALITY - INSTANT KANTOI
+                    triggerGameOver();
+                }
+            }
+        }
+
+        function triggerGameOver() {
+            isGameRunning = false;
+            playSynthesizedSound('gameover');
+            cancelAnimationFrame(gameLoopId);
+            
+            // Save local Highscore
+            if (gameScore > highscore) {
+                highscore = gameScore;
+                localStorage.setItem('delulu_highscore', highscore);
+                document.getElementById('game-highscore').innerText = highscore;
+            }
+
+            // Populate Final Screen details
+            document.getElementById('game-final-score').innerText = `Ego Score: ${gameScore}`;
+            
+            // Custom rankings
+            const evalText = document.getElementById('game-score-eval');
+            if (gameScore === 0) {
+                evalText.innerText = '"ACTUAL SANE CITIZEN"';
+            } else if (gameScore < 100) {
+                evalText.innerText = '"AMATEUR STORYTELLER"';
+            } else if (gameScore < 300) {
+                evalText.innerText = '"SS15 INFLUENCER LEVEL"';
+            } else {
+                evalText.innerText = '"GOD OF PURE GASLIGHT"';
+            }
+
+            document.getElementById('game-over-overlay').classList.remove('hidden');
+        }
+
+        function shareGameScore() {
+            const bragText = `I survived Aleeya Natasha's delusional matrix for a score of ${gameScore} in the DELULU RUNNER game! Avoided the mom slippers successfully! 💀💅 #AleeyaNatashaHoaxes`;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = bragText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast("Bragging status copied to clipboard! Share on X or WhatsApp.");
+        }
+
+        function gameLoop() {
+            if (!isGameRunning) return;
+
+            // Clear Frame with nice gradient background trail
+            ctx.fillStyle = '#09090e';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw faint digital horizontal guidelines
+            ctx.strokeStyle = 'rgba(255,255,255,0.02)';
+            ctx.lineWidth = 1;
+            for (let i = 0; i < canvas.height; i += 40) {
+                ctx.beginPath();
+                ctx.moveTo(0, i);
+                ctx.lineTo(canvas.width, i);
+                ctx.stroke();
+            }
+
+            // Move Player
+            if (keys.left) {
+                player.x -= player.speed;
+                if (player.x < 0) player.x = 0;
+            }
+            if (keys.right) {
+                player.x += player.speed;
+                if (player.x > canvas.width - player.width) player.x = canvas.width - player.width;
+            }
+
+            // Render Player avatar
+            ctx.save();
+            // Draw Brutalist Border for the player box
+            ctx.fillStyle = '#000000';
+            ctx.strokeStyle = '#ff007f';
+            ctx.lineWidth = 3;
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+            ctx.strokeRect(player.x, player.y, player.width, player.height);
+            
+            // Draw player emoji character centered
+            ctx.font = '30px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(player.emoji, player.x + player.width / 2, player.y + player.height / 2);
+            ctx.restore();
+
+            // Spawn & Manage falling obstacles
+            createItem();
+
+            for (let i = items.length - 1; i >= 0; i--) {
+                const item = items[i];
+                item.y += item.speed;
+
+                // Collision detection
+                handleCollisions(item, i);
+
+                // Boundary cleaning
+                if (item.y > canvas.height) {
+                    // If we let a delusion slip by, nothing happens. 
+                    // But if it was a reality slipper that we avoided, we get 1 bonus point!
+                    if (!item.isDelusion) {
+                        gameScore += 1;
+                    }
+                    items.splice(i, 1);
+                    continue;
+                }
+
+                // Render Item
+                ctx.save();
+                ctx.font = '24px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                
+                // Draw cool mini indicator halo around realities to scare player
+                if (!item.isDelusion) {
+                    ctx.strokeStyle = 'rgba(244, 63, 94, 0.2)';
+                    ctx.beginPath();
+                    ctx.arc(item.x + item.width / 2, item.y + item.height / 2, 18, 0, Math.PI * 2);
+                    ctx.stroke();
+                }
+
+                ctx.fillText(item.char, item.x + item.width / 2, item.y + item.height / 2);
+                ctx.restore();
+            }
+
+            // Handle Particles
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+                p.alpha *= p.life;
+
+                ctx.save();
+                ctx.globalAlpha = p.alpha;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+
+                if (p.alpha < 0.05) {
+                    particles.splice(i, 1);
+                }
+            }
+
+            // Live HUD Score drawing directly on canvas
+            ctx.save();
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 16px "Space Grotesk", sans-serif';
+            ctx.fillText(`SCORE: ${gameScore}`, 20, 30);
+            ctx.restore();
+
+            gameLoopId = requestAnimationFrame(gameLoop);
+        }
+
+        const apologyDrafts = [
+            "Uhm... guys... I think there has been a lot of misunderstanding about what I claimed to have done. It wasn't a hoax... it was simply a projection of my inner potential.",
+            "Honestly, if you think about it, dating Haechan was a social experiment to analyze the structural density of Selangor's gossip network. I am basically a scientist.",
+            "My British accent was actually real because my soul was born in London. It's not a lie if my internal identity aligns with the Commonwealth, ok?",
+            "Look, the Mydin plastic bag on the Balenciaga runway was a commentary on corporate capitalism. I was doing conceptual art. You guys just don't understand fashion.",
+            "At the end of the day, my mom shouldn't have shown everyone the empty Maggi packets. That was a direct violation of my brand partnership guidelines."
+        ];
+        let currentApologyIndex = 0;
+
+        // STICKER LIST FOR SPAWNING
+        const emojis = ['💅', '🤡', '🤥', '🔥', '💸', '🤣', '🤫', '💀', '💯', 'Cap', 'No Cap', 'Delulu', 'Kantoi weh'];
+
+        // RENDER HOAXES TO THE GRID
+        function renderHoaxes() {
+            const grid = document.getElementById('hoaxes-grid');
+            const emptyState = document.getElementById('empty-state');
+            const searchQuery = document.getElementById('search-hoax').value.toLowerCase();
+            
+            grid.innerHTML = '';
+            
+            const filtered = hoaxes.filter(h => {
+                const matchesTier = activeFilter === 'all' || h.tier === activeFilter;
+                const matchesSearch = h.title.toLowerCase().includes(searchQuery) || 
+                                      h.claim.toLowerCase().includes(searchQuery) ||
+                                      h.category.toLowerCase().includes(searchQuery);
+                return matchesTier && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                emptyState.classList.remove('hidden');
+                grid.classList.add('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+                grid.classList.remove('hidden');
+            }
+
+            filtered.forEach(h => {
+                const isSelected = selectedLies.has(h.id);
+                const card = document.createElement('div');
+                card.className = `p-6 neo-border cursor-pointer transition-all ${
+                    isSelected ? 'bg-black text-white border-lime-400 neo-border-green' : 'bg-[#11111b] text-white border-black hover:border-pink-500'
+                }`;
+                card.setAttribute('id', `hoax-card-${h.id}`);
+                card.setAttribute('onclick', `toggleLie(${h.id}, event)`);
+
+                // Tier colors
+                let tierBadgeColor = 'bg-red-500';
+                if (h.tier === 'A') tierBadgeColor = 'bg-lime-500 text-black';
+                if (h.tier === 'B') tierBadgeColor = 'bg-cyan-400 text-black';
+                if (h.tier === 'C') tierBadgeColor = 'bg-yellow-400 text-black';
+                if (h.tier === 'D') tierBadgeColor = 'bg-purple-400';
+
+                card.innerHTML = `
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[10px] code-font bg-white/10 px-2 py-1 rounded font-bold uppercase tracking-wider">${h.category}</span>
+                        <span class="text-xs font-black px-2.5 py-1 rounded ${tierBadgeColor} code-font">TIER ${h.tier}</span>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold mb-2 tracking-tight ${isSelected ? 'text-[#adff2f]' : ''}">${h.id}. ${h.title}</h3>
+                    <p class="text-xs text-gray-400 mb-4 italic">"${h.claim}"</p>
+                    <div class="bg-black/40 p-3 rounded border border-white/5 mb-4 text-xs">
+                        <span class="text-[#ff007f] font-bold block mb-1">🔍 KANTOI FACT:</span>
+                        <p class="text-gray-300 font-medium leading-relaxed">${h.reality}</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-1">
+                            <span class="text-xs text-gray-500">Delusion Scale:</span>
+                            <span class="text-xs font-bold text-yellow-400">${h.scale}%</span>
+                        </div>
+                        <button onclick="copyHoax(${h.id}, event)" class="bg-[#ff007f] text-white text-xs font-bold px-3 py-1.5 neo-border hover:bg-pink-600 transition-colors code-font">
+                            📋 COPY QUOTE
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // TIER FILTER CONTROLS
+        function setFilter(tier) {
+            activeFilter = tier;
+            const buttons = document.querySelectorAll('#tier-filters button');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-[#ff007f]', 'text-white', 'active-filter');
+                btn.classList.add('bg-black');
+            });
+
+            // Find current and set design
+            event.target.classList.remove('bg-black');
+            event.target.classList.add('bg-[#ff007f]', 'text-white', 'active-filter');
+            
+            renderHoaxes();
+        }
+
+        function filterHoaxes() {
+            renderHoaxes();
+        }
+
+        // SELECTING LIES TO FEED THE DELUSION METER
+        function toggleLie(id, event) {
+            // Prevent triggering if clicked the copy button
+            if (event.target.tagName === 'BUTTON') return;
+
+            if (selectedLies.has(id)) {
+                selectedLies.delete(id);
+            } else {
+                selectedLies.add(id);
+            }
+            
+            updateDelusionMeter();
+            renderHoaxes();
+        }
+
+        function updateDelusionMeter() {
+            const count = selectedLies.size;
+            document.getElementById('selected-count').innerText = count;
+
+            // Compute percentage
+            const percentage = Math.min(10 + (count * 2.09), 100);
+            const bar = document.getElementById('meter-bar');
+            bar.style.width = `${percentage}%`;
+            bar.innerText = `${Math.round(percentage)}%`;
+
+            // Verdict and description changes
+            const verdict = document.getElementById('delusion-verdict');
+            const desc = document.getElementById('meter-description');
+
+            if (count === 0) {
+                verdict.innerText = "Status: Standard Civilian";
+                desc.innerText = `"NORMAL PERSON STAGE" (Sikit overclaim but ok)`;
+            } else if (count > 0 && count <= 5) {
+                verdict.innerText = "Status: Mild Storyteller";
+                desc.innerText = `"OVERCLAIM INTERN" (Classic friend group gossip exaggeration)`;
+            } else if (count > 5 && count <= 15) {
+                verdict.innerText = "Status: High Delusion Index";
+                desc.innerText = `"THE SS15 ENTHUSIAST" (Gaslighting her way out of chores)`;
+            } else if (count > 15 && count <= 30) {
+                verdict.innerText = "Status: Stage 4 Gaslighter";
+                desc.innerText = `"TIKTOK AUDIO QUEEN" (She believes her own fanfics now)`;
+            } else {
+                verdict.innerText = "Status: Absolute Overlord of Lies";
+                desc.innerText = `"TAHAP DEWA DELUSION" (Call the authorities she has escaped the matrix)`;
+            }
+        }
+
+        function resetDelusionMeter() {
+            selectedLies.clear();
+            updateDelusionMeter();
+            renderHoaxes();
+        }
+
+        // COPY QUOTES SYSTEM
+        function copyHoax(id, event) {
+            event.stopPropagation();
+            const hoax = hoaxes.find(h => h.id === id);
+            const textToCopy = `Did you know about Aleeya Natasha's hoax? She claimed: "${hoax.claim}" but the reality is: ${hoax.reality} 😂 #AleeyaNatashaHoaxes`;
+            
+            // Required command fallback copy
+            const tempInput = document.createElement('textarea');
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showToast(`Copied Lie #${id} details! Go paste in the chat group.`);
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const msg = document.getElementById('toast-msg');
+            msg.innerText = message;
+            
+            toast.classList.remove('opacity-0', 'translate-y-20', 'pointer-events-none');
+            
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
+            }, 2500);
+        }
+
+        // TRIVIA QUIZ LOGIC
+        const quizQuestions = [
+            {
+                q: "Where was Aleeya's famous Coachella VIP experience actually located?",
+                options: [
+                    { text: "California Desert, USA", correct: false },
+                    { text: "Klebang Sand Dunes, Melaka", correct: true },
+                    { text: "Genting Highlands Parking Lot", correct: false },
+                    { text: "SS15 Mamak Back Alley", correct: false }
+                ]
+            },
+            {
+                q: "Who was the 'NCT Haechan' Aleeya claimed she held hands with at Steven's Corner?",
+                options: [
+                    { text: "Haechan from NCT 127", correct: false },
+                    { text: "Her cousin Azman wearing a black bucket hat & selipar jepun", correct: true },
+                    { text: "A stray ginger cat behind the kitchen", correct: false },
+                    { text: "A random food delivery rider", correct: false }
+                ]
+            },
+            {
+                q: "What did Aleeya's 'RM10 million Air Balang Empire' actually have in its bank account?",
+                options: [
+                    { text: "Exactly RM10,000,000", correct: false },
+                    { text: "RM14.50 (and her mother did all the work)", correct: true },
+                    { text: "RM0.05", correct: false },
+                    { text: "A single voucher for free condensed milk", correct: false }
+                ]
+            },
+            {
+                q: "Why was her Paris Fashion Week Balenciaga runway post immediately debunked?",
+                options: [
+                    { text: "Her shadow faced the wrong way and she held a Mydin bag", correct: true },
+                    { text: "She was wearing her secondary school tracksuits", correct: false },
+                    { text: "She was tagged at a local burger stall at the exact same minute", correct: false },
+                    { text: "She spelled Balenciaga as 'Belacan-iaga'", correct: false }
+                ]
+            }
+        ];
+
+        function startQuiz() {
+            document.getElementById('quiz-intro').classList.add('hidden');
+            document.getElementById('quiz-active').classList.remove('hidden');
+            currentQuizIndex = 0;
+            quizScore = 0;
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const current = quizQuestions[currentQuizIndex];
+            document.getElementById('quiz-current').innerText = currentQuizIndex + 1;
+            document.getElementById('quiz-score').innerText = quizScore;
+            document.getElementById('quiz-question').innerText = current.q;
+
+            const container = document.getElementById('quiz-answers');
+            container.innerHTML = '';
+
+            current.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left bg-black hover:bg-neutral-900 text-white font-bold py-3 px-4 rounded border-2 border-neutral-800 hover:border-[#ff007f] transition-all code-font text-sm flex items-center justify-between";
+                btn.innerHTML = `<span>${opt.text}</span> <i class="fa-solid fa-chevron-right text-gray-600"></i>`;
+                btn.onclick = () => submitAnswer(opt.correct);
+                container.appendChild(btn);
+            });
+        }
+
+        function submitAnswer(isCorrect) {
+            if (isCorrect) {
+                quizScore++;
+                showToast("🎯 No Cap! That is correct!");
+            } else {
+                showToast("🤡 You fell for the gaslighting! Wrong!");
+            }
+
+            currentQuizIndex++;
+            if (currentQuizIndex < quizQuestions.length) {
+                showQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-active').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+
+            const emoji = document.getElementById('result-emoji');
+            const title = document.getElementById('result-title');
+            const desc = document.getElementById('result-desc');
+
+            if (quizScore === 4) {
+                emoji.innerText = "🏆";
+                title.innerText = "THE GASLIGHT SURVIVOR!";
+                desc.innerText = "You scored 4/4! Your mental shield is absolutely flawless. Aleeya cannot manipulate your perception of space and time.";
+            } else if (quizScore >= 2) {
+                emoji.innerText = "🤨";
+                title.innerText = "MILDLY GULLIBLE";
+                desc.innerText = `You scored ${quizScore}/4. You fell for some of the classic trap cards. Be cautious next time she mentions her 'Uncle' who owns a helicopter.`;
+            } else {
+                emoji.innerText = "🤡";
+                title.innerText = "ALEEYA'S NEXT VICTIM";
+                desc.innerText = `You scored ${quizScore}/4. You are extremely easy to manipulate, fr fr. Please don't lend her money for her next Air Balang venture.`;
+            }
+        }
+
+        function restartQuiz() {
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-intro').classList.remove('hidden');
+        }
+
+        // RANDOM HOAX GENERATOR LOGIC
+        const genSubjects = ["Aleeya Natasha", "Our sister Aleeya", "The Queen of Delusion herself", "That girl Aleeya", "Aleeya"];
+        const genActions = [
+            "claimed she was handpicked to", 
+            "insisted she accidentally", 
+            "swore on her life she", 
+            "made a 10-part TikTok saying she", 
+            "told the WhatsApp group chat she"
+        ];
+        const genScenarios = [
+            "collab with Taylor Swift on a Melayu ballad", 
+            "buy the entire Pavilion KL mall using Shopee Coins", 
+            "teach proper English to actual British royals in London", 
+            "hack into the Malaysian JPJ database to delete her speeding tickets", 
+            "invent a new flavor of Sambal Belacan that cures global sadness", 
+            "become the official global face of Maggi Curry cup noodles", 
+            "fight off a wild boar in Ampang using only her hair tie", 
+            "accidentally purchase a luxury penthouse in Mont Kiara because her cat walked on the keypad"
+        ];
+        const genEndings = [
+            "but her mom saw her crying over a RM5 parking fee.", 
+            "but got immediately kantoi when her card got declined at 7-Eleven.", 
+            "no cap fr fr.", 
+            "and she expects us to believe this shit weh.", 
+            "literally the most overclaim thing she did this week."
+        ];
+
+        function generateHoax() {
+            const s = genSubjects[Math.floor(Math.random() * genSubjects.length)];
+            const a = genActions[Math.floor(Math.random() * genActions.length)];
+            const sc = genScenarios[Math.floor(Math.random() * genScenarios.length)];
+            const e = genEndings[Math.floor(Math.random() * genEndings.length)];
+
+            document.getElementById('generated-hoax-text').innerText = `"${s} ${a} ${sc} ${e}"`;
+            
+            // Dynamic animation of generated container
+            const container = document.getElementById('generated-hoax-text').parentElement;
+            container.classList.add('scale-105');
+            setTimeout(() => {
+                container.classList.remove('scale-105');
+            }, 150);
+        }
+
+        // APOLOGY CYCLING EFFECT
+        function cycleApologyText() {
+            currentApologyIndex = (currentApologyIndex + 1) % apologyDrafts.length;
+            document.getElementById('apology-text').innerText = `"${apologyDrafts[currentApologyIndex]}"`;
+        }
+
+        // STICKER SYSTEM (GEN Z CHAOTIC INTERACTION)
+        function spawnSticker(e) {
+            // Check if user clicked a button or interactive elements first
+            if (e.target.closest('button') || e.target.closest('input') || e.target.closest('a') || e.target.closest('[onclick]')) {
+                return;
+            }
+
+            // Create temporary floating sticker
+            const sticker = document.createElement('div');
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            sticker.className = 'absolute sticker-spawn bg-black text-white px-3 py-1.5 rounded text-sm font-black border-2 border-white/80 select-none z-50 code-font';
+            sticker.innerText = randomEmoji;
+            sticker.style.left = `${e.pageX}px`;
+            sticker.style.top = `${e.pageY}px`;
+
+            // Random rotation
+            const randomRotation = Math.floor(Math.random() * 40) - 20;
+            sticker.style.transform = `translate(-50%, -50%) rotate(${randomRotation}deg)`;
+
+            document.body.appendChild(sticker);
+
+            // Spawn emoji burst particles around click
+            for (let i = 0; i < 5; i++) {
+                createParticle(e.pageX, e.pageY);
+            }
+
+            // Remove after some duration
+            setTimeout(() => {
+                sticker.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                sticker.style.opacity = '0';
+                sticker.style.transform = `translate(-50%, -100%) rotate(${randomRotation}deg) scale(0.8)`;
+                setTimeout(() => {
+                    sticker.remove();
+                }, 500);
+            }, 2500);
+        }
+
+        function createParticle(x, y) {
+            const p = document.createElement('div');
+            p.className = 'emoji-burst';
+            p.innerText = ['✨', '🔥', '💅', '🤡', '💸'][Math.floor(Math.random() * 5)];
+            p.style.left = `${x}px`;
+            p.style.top = `${y}px`;
+
+            // Random angle and distance
+            const angle = Math.random() * Math.PI * 2;
+            const distance = Math.random() * 60 + 30;
+            const px = Math.cos(angle) * distance;
+            const py = Math.sin(angle) * distance;
+
+            p.style.setProperty('--x', `${px}px`);
+            p.style.setProperty('--y', `${py}px`);
+
+            document.body.appendChild(p);
+
+            setTimeout(() => {
+                p.remove();
+            }, 800);
+        }
+        // ADD NEW HOAX SUBMISSION LOGIC
+        // ADD NEW HOAX SUBMISSION LOGIC (LIVE DB VERSION)
+        document.getElementById('new-hoax-form')?.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Visual loading state so users don't spam the button
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = "⏳ UPLOADING TO GOOGLE SHEETS...";
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            
+            // Collect data from the form
+            const title = document.getElementById('new-title').value;
+            const category = document.getElementById('new-category').value;
+            const claim = document.getElementById('new-claim').value;
+            const reality = document.getElementById('new-reality').value;
+            const tier = document.getElementById('new-tier').value;
+            const scale = parseInt(document.getElementById('new-scale').value);
+            
+            // Generate next available ID
+            const nextId = hoaxes.length > 0 ? Math.max(...hoaxes.map(h => h.id)) + 1 : 1;
+            
+            const newHoax = {
+                id: nextId,
+                title: title,
+                tier: tier,
+                claim: claim,
+                reality: reality,
+                scale: scale,
+                category: category
+            };
+            
+            try {
+                // Send the data to Google Sheets via SheetDB
+                // Note: SheetDB requires the payload to be wrapped in a "data" array
+                await fetch(SHEETDB_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ data: [newHoax] })
+                });
+
+                // If successful, push it to our local array instantly
+                hoaxes.unshift(newHoax);
+                
+                // Update global UI counters
+                document.getElementById('stat-total-hoaxes').innerText = hoaxes.length;
+                const allLiesBtn = document.querySelector("button[onclick=\"setFilter('all')\"]");
+                if(allLiesBtn) allLiesBtn.innerText = `ALL LIES (${hoaxes.length})`;
+                
+                // Refresh the grid
+                setFilter('all');
+                
+                showToast("✅ Database Updated! The spreadsheet has recorded her sins.");
+                this.reset();
+                document.getElementById('hoax-tracker').scrollIntoView({ behavior: 'smooth' });
+
+            } catch (error) {
+                console.error("Upload failed:", error);
+                showToast("❌ ERROR: Could not reach the database. Aleeya might have hacked us.");
+            } finally {
+                // Restore button state
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        });
+
+        // --- LIVE DATABASE CONNECTION ---
+        const SHEETDB_URL = 'https://sheetdb.io/api/v1/YOUR_API_KEY_HERE'; // <-- PASTE YOUR URL HERE
+
+        async function fetchLiveHoaxes() {
+            try {
+                const response = await fetch(SHEETDB_URL);
+                const data = await response.json();
+                
+                // If there are new lies in the sheet, format them and add to the top of our list
+                if (data && data.length > 0) {
+                    const liveEntries = data.map(item => ({
+                        id: parseInt(item.id),
+                        title: item.title,
+                        tier: item.tier,
+                        claim: item.claim,
+                        reality: item.reality,
+                        scale: parseInt(item.scale),
+                        category: item.category
+                    }));
+                    
+                    // Add to the very beginning of the hoaxes array
+                    hoaxes.unshift(...liveEntries.reverse());
+                    
+                    // Update the visual counters
+                    const totalCounter = document.getElementById('stat-total-hoaxes');
+                    if (totalCounter) totalCounter.innerText = hoaxes.length;
+                    
+                    const allLiesBtn = document.querySelector("button[onclick=\"setFilter('all')\"]");
+                    if (allLiesBtn) allLiesBtn.innerText = `ALL LIES (${hoaxes.length})`;
+                }
+            } catch (error) {
+                console.error("Failed to sync with the Delusion Matrix:", error);
+            }
+        }
+
+        // WINDOW ONLOAD INITIALIZER
+        window.onload = async function() {
+            // Force the page to fetch from Google Sheets first
+            await fetchLiveHoaxes();
+            
+            renderHoaxes();
+            generateHoax();
+            resizeCanvas();
+        }
+    </script>
+</body>
+</html>
