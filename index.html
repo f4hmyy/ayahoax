@@ -335,7 +335,12 @@
                 </div>
 
                 <div class="flex flex-col gap-2 md:col-span-2">
-                    <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">The Reality (Kantoi Fact)</label>
+                    <div class="flex items-center justify-between">
+                        <label class="text-[#adff2f] font-bold text-xs uppercase tracking-wider">The Reality (Kantoi Fact)</label>
+                        <button type="button" onclick="generateRealityWithAI()" class="bg-cyan-400 text-black hover:bg-cyan-300 font-bold px-3 py-1 text-[10px] uppercase code-font neo-border">
+                            🤖 Auto-Debunk with AI
+                        </button>
+                    </div>
                     <textarea id="new-reality" required rows="2" placeholder="How did she get exposed? What actually happened..." class="bg-black border-2 border-neutral-800 focus:border-[#ff007f] outline-none px-4 py-3 text-white placeholder-gray-600 transition-colors"></textarea>
                 </div>
 
@@ -1589,6 +1594,61 @@
                         DATABASE CONNECTION FAILED.<br>ALEEYA MAY HAVE TAKEN DOWN THE MAINFRAME.
                     </div>
                 `;
+            }
+        }
+
+        // --- DEEPSEEK AI FACT CHECKER (DANGER ZONE: HARDCODED KEY) ---
+        async function generateRealityWithAI() {
+            const claimBox = document.getElementById('new-claim');
+            const realityBox = document.getElementById('new-reality');
+            
+            if (!claimBox.value.trim()) {
+                showToast("⚠️ Type her claim first before asking the AI!");
+                return;
+            }
+
+            // 🚨 YOUR HARDCODED API KEY GOES HERE 🚨
+            const DEEPSEEK_API_KEY = "sk-49abb474c3ba49d9b93450d942f01d66";
+
+            // Visual feedback
+            realityBox.value = "🤖 DeepSeek is analyzing the delusion...";
+            
+            try {
+                const response = await fetch('https://api.deepseek.com/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${DEEPSEEK_API_KEY}`
+                    },
+                    body: JSON.stringify({
+                        model: "deepseek-chat",
+                        messages: [
+                            { 
+                                role: "system", 
+                                content: "You are a savage, cynical Malaysian Gen Z friend. Your job is to debunk absolute lies and delusions made by a girl named Aya. Read the claim, and write a 1-to-2 sentence reality check exposing her. Use Malaysian slang like 'kantoi', 'weh', 'fr', and 'cap'. Be ruthless but funny." 
+                            },
+                            { 
+                                role: "user", 
+                                content: `Aya's claim: "${claimBox.value}"` 
+                            }
+                        ]
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.choices && data.choices.length > 0) {
+                    // Type out the AI's response into the textarea
+                    realityBox.value = data.choices[0].message.content;
+                    showToast("✨ AI successfully destroyed her ego.");
+                } else {
+                    throw new Error("Invalid response from DeepSeek");
+                }
+                
+            } catch (error) {
+                console.error("AI Error:", error);
+                realityBox.value = "";
+                showToast("❌ DeepSeek failed. Her delusion is too strong.");
             }
         }
 
